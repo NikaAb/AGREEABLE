@@ -1,0 +1,12 @@
+Analysing via Scoper
+1- Run IMGT high-Vquest.
+2- Run MakeDb from Change-O to generate the standardized tab-delimited database file.
+
+in bin folder of the change-o, run :
+python MakeDb.py imgt -i ../../l0036_mono_simu.txz
+
+
+
+
+3- Run Scoper
+4- Format the output
