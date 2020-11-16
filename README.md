@@ -43,7 +43,6 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
 
 ## Using BCR GTG 
-
   ```
   In the GTM/Src , run the following command :
   $ bash run_GTM.sh [repertoire_name]
@@ -57,10 +56,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
                                     [repertoire_name]_unannotated_seq.txt
                                     [repertoire_name]_repertoire.png
   [repertoire_name] is the IMGT/highVquast's output folder name
-  
-
-      ```  
-
+ ```  
 ## License, Patches, and Ongoing Developements
 
   * The program is distributed under the .  
