@@ -18,7 +18,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
     The following files must be provided:
     * 1_Summary
     * 2_IMGT-gapped
-  * See [example input files](https://github.com)
+  * See [example input files](https://github.com/NikaAb/BCR_GTG/tree/master/Database/IMGT_highvquest_output)
 
 ## Outputs
 
@@ -38,7 +38,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       D) Percentage of the 100 most abundant clone
       * 
 
-  * See [example output files](https://github.com/)  
+  * See [example output files](https://github.com/NikaAb/BCR_GTG/tree/master/Database/GTM_output/I1_IMGT)  
 
 
 
@@ -60,5 +60,5 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 ## License, Patches, and Ongoing Developements
 
   * The program is distributed under the .  
-  * [Feature requests and open issues](https://github.com/).
+  * [Feature requests and open issues](https://github.com/NikaAb/BCR_GTG/issues).
 
