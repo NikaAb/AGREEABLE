@@ -23,21 +23,24 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 ## Outputs
 
   * BCR GTG returns:
-  
+
     - 5 tab delimited file:
 
       * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully. [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_unannotated_seq.txt)
+
       The columns are :
       ```
       seq Id   functionality  IGHV_and_allele IGHJ_and_allele CDR3
       ```
       * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_cluster_distribution.txt)
+
       The columns are :
       ```
       cluster_Id   abundance
       ```
 
       * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_initial_clusters_Fo.txt)
+
       Each line contains the one cluster id and all the sequence ids of it's members.
       ```
       cluster_Id   seqid1 seqid2 ...
@@ -50,7 +53,8 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       ```
       Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
       ```
-      [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)
+        [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)
+
     - A png file containing :
 
       ![alt text](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_repertoire.png "Title Text")
