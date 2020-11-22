@@ -24,21 +24,40 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
   * Returns
     - 5 tab delimited file:
-      * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully.
-      * [repertoire_name]\_cluster_distribution.txt
-      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output based on 
-      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output
-      * [repertoire_name]\_final_clusters_seq_info.txt : each line 
 
+      * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully. [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_unannotated_seq.txt)
+      The columns are :
+      ```
+      seq Id   functionality  IGHV_and_allele IGHJ_and_allele CDR3
+      ```
+      * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_cluster_distribution.txt)
+      The columns are :
+      ```
+      cluster_Id   abundance
+      ```
+
+      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_initial_clusters_Fo.txt)
+      Each line contains the one cluster id and all the sequence ids of it's members.
+      ```
+      cluster_Id   seqid1 seqid2 ...
+      ```
+      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output, after minimizing intraclonal distances and maximizing interclonal distances.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_Fo.txt)
+      ```
+      cluster_Id   seqid1 seqid2 ...
+      ```
+      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence :
+      ```
+      Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
+      ```
+      [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)
     - A png file containing :
 
+      ![alt text](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_repertoire.png "Title Text")
       A) Circle representation of the clone abundance.
       B) Number of sequences in each clone, all clones are represented, vertical axe is in log scale.
       C) Lorenz curve and Gini coefficient.  A Lorenz curve shows the graphical represen-tation of clonal inequality.  On the horizontal axe, it plots the cumulative fraction oftotal clones when ordered from the less to the most abundant; On the vertical axe,it show the cumulative fraction of sequences.
       D) Percentage of the 100 most abundant clone
-      * 
-
-  * See [example output files](https://github.com/NikaAb/BCR_GTG/tree/master/Database/GTM_output/I1_IMGT)  
+       
 
 
 
