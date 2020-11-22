@@ -22,7 +22,6 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
 ## Outputs
 
-  * Returns
     - 5 tab delimited file:
 
       * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully. [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_unannotated_seq.txt)
