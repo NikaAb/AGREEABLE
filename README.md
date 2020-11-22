@@ -49,7 +49,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt):
+      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence ([example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)):
       ```
       Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
       ```
