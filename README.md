@@ -53,10 +53,14 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
     - A png file containing :
 
       ![alt text](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_repertoire.png "Title Text")
-      A) Circle representation of the clone abundance.
+
+      A) Circle representation of the clone abundance.Each  circle  symbolizes  a  clone,and the clone’s abundance is shown through its size.
+
       B) Number of sequences in each clone, all clones are represented, vertical axe is in log scale.
+
       C) Lorenz curve and Gini coefficient.  A Lorenz curve shows the graphical represen-tation of clonal inequality.  On the horizontal axe, it plots the cumulative fraction oftotal clones when ordered from the less to the most abundant; On the vertical axe,it show the cumulative fraction of sequences.
-      D) Percentage of the 100 most abundant clone
+
+      D) Percentage of the 100 most abundant clones.
        
 
 
