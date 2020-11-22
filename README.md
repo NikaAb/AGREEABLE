@@ -28,13 +28,13 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
       * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully. [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_unannotated_seq.txt)
 
-      The columns are :
+      The columns are:
       ```
       seq Id   functionality  IGHV_and_allele IGHJ_and_allele CDR3
       ```
       * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest.[example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_cluster_distribution.txt)
 
-      The columns are :
+      The columns are:
       ```
       cluster_Id   abundance
       ```
@@ -49,13 +49,13 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence :
+      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence:
       ```
       Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
       ```
-        [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)
+          [example](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)
 
-    - A png file containing :
+    - A png file containing:
 
       ![alt text](https://github.com/NikaAb/BCR_GTG/blob/master/Database/GTM_output/I1_IMGT/I1_IMGT_repertoire.png "Title Text")
 
@@ -63,7 +63,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
       B) Number of sequences in each clone, all clones are represented, vertical axe is in log scale.
 
-      C) Lorenz curve and Gini coefficient.  A Lorenz curve shows the graphical represen-tation of clonal inequality.  On the horizontal axe, it plots the cumulative fraction oftotal clones when ordered from the less to the most abundant; On the vertical axe,it show the cumulative fraction of sequences.
+      C) Lorenz curve and Gini coefficient. A Lorenz curve shows the graphical represen-tation of clonal inequality. On the horizontal axe, it plots the cumulative fraction oftotal clones when ordered from the less to the most abundant; On the vertical axe,it show the cumulative fraction of sequences.
 
       D) Percentage of the 100 most abundant clones.
        
@@ -71,7 +71,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
 
 ## Using BCR GTG 
-  In the GTM/Src , run the following command :
+  In the GTM/Src , run the following command:
   ```
   $ bash run_GTM.sh [repertoire_name]
   ```
@@ -85,7 +85,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
                                     [repertoire_name]_unannotated_seq.txt
                                     [repertoire_name]_repertoire.png
  ```
- [repertoire_name] is the IMGT/highVquast's output folder name
+ [repertoire_name] is the IMGT/highVquast's output folder name.
 ## License, Patches, and Ongoing Developements
 
   * The program is distributed under the .  
