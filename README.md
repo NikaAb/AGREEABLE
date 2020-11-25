@@ -18,7 +18,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
     The following files must be provided:
     * 1_Summary
     * 2_IMGT-gapped
-  * See [example input files](https://github.com/NikaAb/BCR_GTG/tree/master/Database/IMGT_highvquest_output)
+  * See [example input files] (https://github.com/NikaAb/BCR_GTG/tree/master/Database/IMGT_highvquest_output)
 
 ## Outputs
 
