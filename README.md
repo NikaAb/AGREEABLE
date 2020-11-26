@@ -67,25 +67,65 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
       D) Percentage of the 100 most abundant clones.
        
+## Requirements 
 
+  * numpy :
+    ```
+    conda install numpy
+    ```
+    or 
+    ```
+    pip install numpy
+    ```
+
+  * matplotlib
+      ```
+      pip install matplotlib
+      ```
+      
+  * Palettable :
+    ```
+    conda install -c conda-forge palettable
+    ```
+    or
+    ```
+    pip install palettable
+    ```
+
+  * skbio
+    ```
+    conda install -c https://conda.anaconda.org/biocore scikit-bio
+    ```
+    or 
+    ```
+    pip install scikit-bio
+    ```
+  * Levenshtein
+    ```
+    conda install -c conda-forge python-levenshtein 
+    ```
+    or
+    ```
+    pip install python-Levenshtein
+    ```
 
 
 ## Using BCR GTG 
   In the GTM/Src , run the following command:
   ```
-  $ bash run_GTM.sh [repertoire_name]
+  $ bash run_GTM.sh [input_repertoire_name] [output_repertoire_name]
   ```
                       
   Output files will be placed as such:
   ```
-  ~GTM/Src/Output/[repertoire_name]/[repertoire_name]_cluster_distribution.txt
-                                    [repertoire_name]_final_clusters_Fo.txt
-                                    [repertoire_name]_final_clusters_seq_info.txt
-                                    [repertoire_name]_initial_clusters_Fo.txt
-                                    [repertoire_name]_unannotated_seq.txt
-                                    [repertoire_name]_repertoire.png
+  ~[output_repertoire_name]/[input_repertoire_name]_cluster_distribution.txt
+                            [input_repertoire_name]_final_clusters_Fo.txt
+                            [input_repertoire_name]_final_clusters_seq_info.txt
+                            [input_repertoire_name]_initial_clusters_Fo.txt
+                            [input_repertoire_name]_unannotated_seq.txt
+                            [input_repertoire_name]_repertoire.png
  ```
- [repertoire_name] is the IMGT/highVquast's output folder name.
+ [input_repertoire_name] is the IMGT/highVquast's output folder name.
 ## License, Patches, and Ongoing Developements
 
   * The program is distributed under the .  

@@ -131,7 +131,7 @@ def precision_recall(Predicted_File,True_file):
 #			    		Main
 #===================================================================================
 def main():
-    usage = usage = "python sequence_based_fscore.py -p <clustering output> -t <true cluster file> \n"
+    usage = usage = "python pairwise_Fscore_faster.py -p <clustering output> -t <true cluster file> \n"
     parser = OptionParser(usage)
     parser.add_option("-p", "--Predicted_Files_File", dest="Predicted_Files_File",
           help="read clusters from Predicted_File")
