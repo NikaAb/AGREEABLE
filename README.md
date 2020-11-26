@@ -70,13 +70,13 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 ## Requirements 
 
   * numpy :
-    ```
-    conda install numpy
-    ```
-    or 
-    ```
-    pip install numpy
-    ```
+      ```
+      conda install numpy
+      ```
+      or 
+      ```
+      pip install numpy
+      ```
 
   * matplotlib
       ```
@@ -84,30 +84,30 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       ```
       
   * Palettable :
-    ```
-    conda install -c conda-forge palettable
-    ```
-    or
-    ```
-    pip install palettable
-    ```
+      ```
+      conda install -c conda-forge palettable
+      ```
+      or
+      ```
+      pip install palettable
+      ```
 
   * skbio
-    ```
-    conda install -c https://conda.anaconda.org/biocore scikit-bio
-    ```
-    or 
-    ```
-    pip install scikit-bio
-    ```
+      ```
+      conda install -c https://conda.anaconda.org/biocore scikit-bio
+      ```
+      or 
+      ```
+      pip install scikit-bio
+      ```
   * Levenshtein
-    ```
-    conda install -c conda-forge python-levenshtein 
-    ```
-    or
-    ```
-    pip install python-Levenshtein
-    ```
+      ```
+      conda install -c conda-forge python-levenshtein 
+      ```
+      or
+      ```
+      pip install python-Levenshtein
+      ```
 
 
 ## Using BCR GTG 
