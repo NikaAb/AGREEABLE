@@ -72,12 +72,13 @@ def evaluateMeasures( cluster, hashCluster, totalSeq , hashCluster_detail) :
 def readResultFile(filename):
 	cluster = {}; count = 0; totalSeq = 0;
 	file = open(filename, "r")
+	IDcluster = 0
 	for line in file.readlines(): 
 		#print line.split('\t')
 		a=line.split('\t')
 		count +=1
 		if (count % 5000 == 0): print ("Processed ", count)
-		IDcluster = int(a[0])
+		#IDcluster = int(a[0])
 		members = a[1]
 
 		#print len(members),"members"
@@ -94,6 +95,7 @@ def readResultFile(filename):
 			if len(arraySeqIds) != 0:
 				cluster[IDcluster] = arraySeqIds
 				totalSeq += len(arraySeqIds)
+		IDcluster+=1
 	file.close()
 	print ("Total clusters = ", count," Total sequences = " , totalSeq)
 	return  cluster,totalSeq
@@ -134,13 +136,18 @@ def main():
     if len(sys.argv) != 5:
         parser.error("incorrect number of arguments")
     
+
     Predicted_File = options.Predicted_clusters_File
+    print ("----------------------------")
+    print ("Input file :", Predicted_File.split(".")[0],"\n")
     True_file = options.True_clusters_file
     cluster,totalSeq = readResultFile(Predicted_File)
+
     #print("Cluster : \n\n\n\n\n",cluster,'\n\n\n\n\n\n\n typer cluster : \n\n', type(cluster),'\n\n\ntotalSeq\n\n\n', totalSeq)
     hashCluster , hashCluster_detail = readTrueClusterFile(True_file)
     #print('\n\n\n\nhastCluster : \n\n\n', hashCluster,'\n\n\n\n\n\n\n\nhashcluster_detail\n\n\n\n\n\n\n\n',hashCluster_detail)
     evaluateMeasures(cluster, hashCluster, totalSeq, hashCluster_detail)
+    print ("----------------------------")
 
 #=============================================================================#
 if __name__ == "__main__":

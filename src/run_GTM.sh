@@ -29,7 +29,9 @@ mv ${name}_initial_clusters_Fo.txt $2/${name}
 mv ${name}_final_clusters_Fo.txt $2/${name}
 mv ${name}_cluster_distribution.txt $2/${name}
 mv ${name}_repertoire.png $2/${name}
+
 rm ${name}_seq_Fo_V_CDR3_Jseq.txt
 rm ${name}_sameVJ_noallele_CDR3_0.7.txt
 rm ${name}_seq_Fo_V_CDR3_Jseq_clone_V_CDR3_J.txt
 rm ${name}_repertoire_two_levels_info.txt
+

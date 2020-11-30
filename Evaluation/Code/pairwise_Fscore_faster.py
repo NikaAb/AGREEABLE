@@ -111,17 +111,17 @@ def Classiq_mesure(TP,FN,FP, TN):
 	return 0
 #===================================================================================
 def precision_recall(Predicted_File,True_file):
-	print ("reading Predicted_File")
+	#print ("reading Predicted_File")
 	predicted_lines=read_output_file(Predicted_File)
-	print ("reading True file")
+	#print ("reading True file")
 	real_lines=read_output_file(True_file)
-	print ("Creating  True Hash")
+	#print ("Creating  True Hash")
 	HashTrue, nbPairs = createSet(real_lines)
 	
-	print ("Creating  Pred Hash")
+	#print ("Creating  Pred Hash")
 	HashPredict, _ = createSet(predicted_lines)
 	#TP,FN,FP=counter(seq_predicted_cluster,HashTrue,HashPredict,label_seq_True)
-	print ("Count TP, TF, TN")
+	#print ("Count TP, TF, TN")
 	TP,FN,FP = counter_pairwise(HashTrue,HashPredict, nbPairs)
 	
 	TN = nbPairs - (TP + FN + FP)
@@ -142,9 +142,12 @@ def main():
     if len(sys.argv) != 5:
         parser.error("incorrect number of arguments")
     
+    print ("----------------------------")
     Predicted_File = options.Predicted_Files_File
+    print ("Input file :", Predicted_File.split(".")[0],"\n")
     True_file = options.True_clusters_file
     precision_recall(Predicted_File,True_file)
+    print ("----------------------------")
 
 #===================================================================================
 if __name__ == "__main__":

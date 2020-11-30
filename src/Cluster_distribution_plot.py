@@ -44,7 +44,7 @@ def Plot(Clustering_lables,Dataset_name):
 	fig = plt.gcf()
 	fig.subplots_adjust(hspace=0.4)
 	fig.set_size_inches((20,12))
-	fig.suptitle(Dataset_name.split(".")[0][1:]+"'s repertoire", fontsize=20)
+	fig.suptitle(Dataset_name.split(".")[0]+"'s repertoire", fontsize=20)
 	x=[]
 
 	for key in Clustering_lables.keys():
