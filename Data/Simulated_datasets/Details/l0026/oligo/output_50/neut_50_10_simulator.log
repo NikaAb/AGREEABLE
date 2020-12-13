@@ -1,0 +1,7 @@
+Couldn't find the python module "jellyfish" which is used for fast string comparison. Falling back to pure python function.
+Tree contains 6 leaves with stop codons, out of 62 total at last time point.
+Repeated observed sequences in collapsed tree. 1 sequences were found repeated., trying again
+Tree terminated with 0 leaves, 50 desired, trying again
+Tree terminated with 0 leaves, 50 desired, trying again
+Tree terminated with 0 leaves, 50 desired, trying again
+50 simulated observed sequences

@@ -1,0 +1,3 @@
+Couldn't find the python module "jellyfish" which is used for fast string comparison. Falling back to pure python function.
+Tree contains 12 leaves with stop codons, out of 47 total at last time point.
+47 simulated observed sequences
