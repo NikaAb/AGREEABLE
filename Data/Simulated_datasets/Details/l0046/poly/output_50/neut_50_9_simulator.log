@@ -1,6 +1,0 @@
-Couldn't find the python module "jellyfish" which is used for fast string comparison. Falling back to pure python function.
-Tree terminated with 0 leaves, 50 desired, trying again
-Tree terminated with 0 leaves, 50 desired, trying again
-Tree contains 75 leaves with stop codons, out of 1 total at last time point.
-collapsed tree contains 1 sampled sequences, trying again
-50 simulated observed sequences
