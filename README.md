@@ -1,8 +1,8 @@
-# BCR GTG
+# AGREEABLE
 
-**Automatic generation of ground truth for the evaluation of clonal grouping methods in B-cell populations**
+**Automatic Generating of REal data-based bEnchmArks for B ceLl rEpertoire analysis **
 
-BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal grouping ground truth from real IGH repertoires annotated by IMGT/HighV-QUEST. 
+AGREEABLE is an automatic method to generate clonal grouping ground truth from real IGH repertoires annotated by IMGT/HighV-QUEST. 
 
 **REFERENCE**  
 
@@ -22,7 +22,7 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
 
 ## Outputs
 
-  * BCR GTG returns:
+  * AGREEABLE returns:
 
     - 5 tab delimited file:
 
@@ -110,10 +110,10 @@ BCR Ground Truth Generator (BCR GTG)  is an automatic method to generate clonal 
       ```
 
 
-## Using BCR GTG 
+## Using AGREEABLE 
   In the GTM/Src, run the following command:
   ```
-  $ bash run_GTM.sh [input_repertoire_name] [output_repertoire_name]
+  $ bash run_AGREEABLE.sh [input_repertoire_name] [output_repertoire_name]
   ```
                       
   Output files will be placed as such:
